@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php # Script 1.1, script 1.4 - sort.php
+<?php # Script 1.5 - sort_lambda.php
 /**
  * This page creates a multidimensional array
  * of names and grades.
@@ -58,11 +58,15 @@ function grade_sort($x, $y){
 echo '<h2> Array As Is </h2> <pre>' . print_r($students, 1) . '</pre>';
 
 // Sort by name:
-uasort($students, 'name_sort');
+uasort($students, function($x, $y) {
+    return strcasecmp($x['name'], $y['name']);
+});
 echo '<h2> Array Sorted By Name </h2> <pre>' . print_r($students, 1) . '</pre>';
 
 // Sort by grade:
-uasort($students, 'grade_sort');
+uasort($students, function($x, $y){
+    return ($x['grade'] < $y['grade']);
+});
 echo '<h2> Array Sorted By Grade(Descending order) </h2> <pre>' . print_r($students, 1) . '</pre>';
 ?>
 </body>
