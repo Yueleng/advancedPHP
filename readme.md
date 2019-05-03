@@ -14,7 +14,7 @@
 
 2. Be sure to download and install `C++ Redistributable Visual Studio 2017 ` before installing `Apache 2.4`. Click `vc_redist_x64`, download and install.
 
-3. Download `Apache 2.4.39 Win64` (current version when writing this documentation).
+3. Download `Apache 2.4.39 Win64` (current version when creating this documentation).
 
 4. Create a new folder under `C:\` with name `Apache24`
 
