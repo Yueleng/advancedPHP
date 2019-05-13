@@ -36,14 +36,14 @@ if ($local) {
     $debug = TRUE;
 
     // Define the constants
-    define('BASE_URI', 'C:/Apache24/htdocs/advancedPHP');
-    define('BASE_URL', 'http://localhost/advancedPHP');
+    define('BASE_URI', 'C:/Apache24/htdocs/advancedPHP/');
+    define('BASE_URL', 'http://localhost/advancedPHP/');
     define('DB', 'C:/Apache24/htdocs/advancedPHP/db.inc.php');
 
 } else {
 
-    define('BASE_URI', '/path/to/html/folder');
-    define('BASE_URL', 'http://www.example.com');
+    define('BASE_URI', '/path/to/html/folder/');
+    define('BASE_URL', 'http://www.example.com/');
     define('DB', '/path/to/live/db.inc.php');
 }
 
